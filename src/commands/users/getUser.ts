@@ -17,7 +17,7 @@ const getUser: Command = {
         })
 
         const embed = new MessageEmbed()
-            .setTitle(`Info on User: ${data.name ? data.name : data.login}`)
+            .setTitle(`Info on User: ${data.name ?? data.login}`)
             .addFields(   {
                     name: "Repositories",
                     value: `${data.public_repos}`,
@@ -29,12 +29,12 @@ const getUser: Command = {
                 },
                 {
                     name: ":map: Location",
-                    value: `${data.location ? data.location : "None"}`,
+                    value: `${data.location ?? "None"}`,
                     inline: true
                 },
                 {
                     name: ":notepad_spiral: Bio",
-                    value: `${data.bio ? data.bio : "No Bio"}`,
+                    value: `${data.bio ?? : "No Bio"}`,
                     inline: true
                 },
                 {
