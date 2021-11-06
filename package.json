@@ -1,0 +1,26 @@
+{
+    "name": "gitbot",
+    "version": "1.0.0",
+    "description": "Discord bot built using the discord api.",
+    "repository": {
+        "url": "https://github.com/Conrad36/gitbot/tree/javascript"
+    },
+    "license": "GPL-3.0 License",
+    "author": {
+        "name": "Conrad36",
+        "url": "https://github.com/Conrad36",
+        "email": "conrad36github@gmail.com"
+    },
+    "main": "index.js",
+    "scripts": {
+        "start": "node ."
+    },
+    "dependencies": {
+        "axios": "^0.21.1",
+        "colors": "^1.4.0",
+        "discord.js": "^13.3.1",
+        "dotenv": "^9.0.2",
+        "klaw": "^3.0.0",
+        "moment": "^2.29.1"
+    }
+}
