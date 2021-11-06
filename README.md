@@ -1,6 +1,8 @@
 # gitbot
 Open-Source Discord bot interacting with Github API. 
 
+### There's a javascript branch for anyone that would rather use it!
+
 ## Setup
 To install the packages: 
 ```
