@@ -1,12 +1,12 @@
-import { CustomClient } from "../lib/client";
-import { Message } from "discord.js";
 
-interface Command {
-    exec: (client: CustomClient, message: Message, args: string[]) => Promise<any>;
+import { Message, Client } from "discord.js";
+
+export interface Command {
+    exec: (client: Client, message: Message, args: string[]) => Promise<any>;
     name: string; 
     description: string;
     usage: string;
-    aliases: string; 
-    permissions: bigint | string | number; 
-    cooldown: number; //helps with ratelimiting.
+    category: string;
+    init?: (client: Client) => never;
+    aliases: string[];
 }
