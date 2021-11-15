@@ -31,7 +31,7 @@ const getRepository: Command = {
         });
         const returnedData = new MessageEmbed()
             .setTitle(`Information on Repository: ${name}`)
-            .setDescription(description ? description : "")
+            .setDescription(description ?? "")
             .addFields(
                 {
                     name: "Repository Name",
@@ -51,7 +51,7 @@ const getRepository: Command = {
                 {
                     name: "Owner",
                     inline: true,
-                    value: `${owner.name ? owner.name : owner.login}`
+                    value: `${owner.name ?? owner.login}`
                 },
                 {
                     name: "Created At",
