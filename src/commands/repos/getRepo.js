@@ -38,7 +38,7 @@ module.exports = {
                     {
                         name: "Owner",
                         inline: true,
-                        value: `${value.data.owner.name ? value.data.owner.name : value.data.owner.login}`
+                        value: `${value.data.owner.name ?? value.data.owner.login}`
                     },
                     {
                         name: "Created At",
