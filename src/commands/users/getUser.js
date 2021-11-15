@@ -11,7 +11,7 @@ module.exports = {
         
         axios.get(`https://api.github.com/users/${args[0]}`).then(async (value) => {
             const returnedData = new MessageEmbed()
-                .setTitle(`Info On User: ${value.data.name ? value.data.name : value.data.login}`)
+                .setTitle(`Info On User: ${value.data.name ?? value.data.login}`)
                 .addFields(
                 {
                         name: "Repositories",
